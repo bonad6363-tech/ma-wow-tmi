@@ -40,25 +40,27 @@
 
   <main id="main">
     <section class="hero" id="top">
-      <figure class="hero__banner">
-        <img
-          class="hero__image"
-          src="images/hero-interior.jpg"
-          width="1600"
-          height="640"
-          alt="Moderni sisäremontti: keittiö ja olohuone"
-          fetchpriority="high"
-          decoding="async">
-      </figure>
-      <div class="container hero__content">
-        <p class="hero__name">M.A WOW Tmi</p>
-        <h1 class="hero__title">Remontti- ja rakennuspalvelut </h1>
-        <p class="hero__text">Tarjoan monipuolisia remontti-, purku- ja rakennuspalveluita Helsingissä, Vantaalla, Espoossa ja koko Uudellamaalla.</p>
-        <div class="hero__actions">
-          <a class="btn btn--accent" href="#yhteystiedot">Pyydä tarjous</a>
-          <a class="btn btn--outline" href="tel:+358400901260">Soita</a>
+      <div class="hero__layout">
+        <div class="hero__content">
+          <p class="hero__name">M.A WOW Tmi</p>
+          <h1 class="hero__title">Remontti- ja rakennuspalvelut </h1>
+          <p class="hero__text">Tarjoan monipuolisia remontti-, purku- ja rakennuspalveluita Helsingissä, Vantaalla, Espoossa ja koko Uudellamaalla.</p>
+          <div class="hero__actions">
+            <a class="btn btn--accent" href="#yhteystiedot">Pyydä tarjous</a>
+            <a class="btn btn--outline" href="tel:+358400901260">Soita </a>
+          </div>
+          <p class="hero__area">Helsinki · Vantaa · Espoo · koko Uusimaa</p>
         </div>
-        <p class="hero__area">Helsinki · Vantaa · Espoo · koko Uusimaa</p>
+        <figure class="hero__media">
+          <img
+            class="hero__image"
+            src="images/hero-interior.jpg"
+            width="1200"
+            height="800"
+            alt="Moderni sisäremontti: keittiö ja olohuone"
+            fetchpriority="high"
+            decoding="async">
+        </figure>
       </div>
     </section>
 
@@ -67,28 +69,46 @@
         <h2 class="section__title" id="palvelut-title">Palvelut</h2>
         <ul class="services">
           <li class="card">
-            <h3 class="card__title">Huoneistoremontit</h3>
-            <p class="card__text">Sisäremontit ja saneeraustyöt.</p>
+            <img class="card__image" src="images/services/huoneistoremontit.jpg" width="800" height="500" alt="Valmis huoneistoremontti" loading="lazy" decoding="async">
+            <div class="card__body">
+              <h3 class="card__title">Huoneistoremontit</h3>
+              <p class="card__text">Sisäremontit ja saneeraustyöt.</p>
+            </div>
           </li>
           <li class="card">
-            <h3 class="card__title">Purkutyöt</h3>
-            <p class="card__text">Kylpyhuoneiden ja keittiöiden purkutyöt sekä lattioiden purku.</p>
+            <img class="card__image" src="images/services/purkutyoet.jpg" width="800" height="500" alt="Keittiön purkutyö" loading="lazy" decoding="async">
+            <div class="card__body">
+              <h3 class="card__title">Purkutyöt</h3>
+              <p class="card__text">Kylpyhuoneiden ja keittiöiden purkutyöt sekä lattioiden purku.</p>
+            </div>
           </li>
           <li class="card">
-            <h3 class="card__title">Lattia-asennukset</h3>
-            <p class="card__text">Lattioiden asennus sekä laminaatti- ja parkettiasennukset.</p>
+            <img class="card__image" src="images/services/lattia-asennukset.jpg" width="800" height="500" alt="Lattian asennus" loading="lazy" decoding="async">
+            <div class="card__body">
+              <h3 class="card__title">Lattia-asennukset</h3>
+              <p class="card__text">Lattioiden asennus sekä laminaatti- ja parkettiasennukset.</p>
+            </div>
           </li>
           <li class="card">
-            <h3 class="card__title">Tasoitus ja maalaus</h3>
-            <p class="card__text">Seinien ja kattojen tasoitus ja maalaus.</p>
+            <img class="card__image" src="images/services/tasoitus-maalaus.jpg" width="800" height="500" alt="Seinän maalaus" loading="lazy" decoding="async">
+            <div class="card__body">
+              <h3 class="card__title">Tasoitus ja maalaus</h3>
+              <p class="card__text">Seinien ja kattojen tasoitus ja maalaus.</p>
+            </div>
           </li>
           <li class="card">
-            <h3 class="card__title">Laatoitustyöt</h3>
-            <p class="card__text">Laatoitustyöt remonttikohteissa.</p>
+            <img class="card__image" src="images/services/laatoitustyoet.jpg" width="800" height="500" alt="Laattojen asennus" loading="lazy" decoding="async">
+            <div class="card__body">
+              <h3 class="card__title">Laatoitustyöt</h3>
+              <p class="card__text">Laatoitustyöt remonttikohteissa.</p>
+            </div>
           </li>
           <li class="card">
-            <h3 class="card__title">Loppusiivous</h3>
-            <p class="card__text">Loppusiivoukset remontin jälkeen.</p>
+            <img class="card__image" src="images/services/loppusiivous.jpg" width="800" height="500" alt="Loppusiivous remontin jälkeen" loading="lazy" decoding="async">
+            <div class="card__body">
+              <h3 class="card__title">Loppusiivous</h3>
+              <p class="card__text">Loppusiivoukset remontin jälkeen.</p>
+            </div>
           </li>
         </ul>
         <p class="services__extra">Kosteus- ja homevaurioiden purkutyöt.</p>
@@ -118,47 +138,66 @@
       </div>
     </section>
 
-    <section class="contact" id="yhteystiedot" aria-labelledby="yhteystiedot-title">
-      <div class="container contact__inner">
-        <div>
-          <h2 class="contact__title" id="yhteystiedot-title">Mitä remontoidaan seuraavaksi?</h2>
-          <p class="contact__text">Kerro suunnitelmastasi ja pyydä tarjous. Voit lähettää sähköpostitse kuvia kohteesta.</p>
-          <div class="contact__actions">
-            <a class="btn btn--accent" href="tel:+358400901260">Soita</a>
-            <a class="btn btn--outline" href="mailto:mmax71074@gmail.com?subject=Tarjouspyynt%C3%B6%20%E2%80%93%20remontti">Lähetä sähköpostia</a>
+    <section class="closing" aria-labelledby="invite-title">
+      <div class="container">
+        <ul class="benefits">
+          <li class="benefit">
+            <span class="benefit__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9"></circle>
+                <path d="M12 7v5l3 2"></path>
+              </svg>
+            </span>
+            <p class="benefit__text">Yli 15 vuoden kokemus</p>
+          </li>
+          <li class="benefit">
+            <span class="benefit__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3l2.1 4.3 4.7.7-3.4 3.3.8 4.7L12 14.2 7.8 16l.8-4.7-3.4-3.3 4.7-.7L12 3z"></path>
+              </svg>
+            </span>
+            <p class="benefit__text">Laadukas työnjälki</p>
+          </li>
+          <li class="benefit">
+            <span class="benefit__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3v18"></path>
+                <path d="M16.5 7.5c0-1.7-2-3-4.5-3s-4.5 1.3-4.5 3 2 3 4.5 3 4.5 1.3 4.5 3-2 3-4.5 3-4.5-1.3-4.5-3"></path>
+              </svg>
+            </span>
+            <p class="benefit__text">Kohtuulliset hinnat</p>
+          </li>
+        </ul>
+
+        <div class="invite">
+          <div class="invite__copy">
+            <h2 class="invite__title" id="invite-title">Suunnitteletko remonttia?</h2>
+            <p class="invite__text">Kerro suunnitelmastasi. Voit lähettää myös kuvia kohteesta.</p>
           </div>
+          <a class="btn btn--invite" href="mailto:mmax71074@gmail.com?subject=Tarjouspyynt%C3%B6%20%E2%80%93%20remontti">Pyydä tarjous <span aria-hidden="true">→</span></a>
         </div>
-        <dl class="contact__list">
-          <div class="contact__row">
-            <dt>Nimi</dt>
-            <dd>Mikael Alshamout</dd>
-          </div>
-          <div class="contact__row">
-            <dt>Yritys</dt>
-            <dd>M.A WOW Tmi</dd>
-          </div>
-          <div class="contact__row">
-            <dt>Puhelin</dt>
-            <dd><a href="tel:+358400901260">+358 40 090 1260</a></dd>
-          </div>
-          <div class="contact__row">
-            <dt>Sähköposti</dt>
-            <dd><a href="mailto:mmax71074@gmail.com?subject=Tarjouspyynt%C3%B6%20%E2%80%93%20remontti">mmax71074@gmail.com</a></dd>
-          </div>
-          <div class="contact__row">
-            <dt>Toimialue</dt>
-            <dd>Helsinki, Vantaa, Espoo ja koko Uusimaa</dd>
-          </div>
-        </dl>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer" id="yhteystiedot">
     <div class="container">
-      <p>M.A WOW Tmi · Mikael Alshamout</p>
-      <p>Remontti- ja rakennuspalvelut · Uusimaa</p>
-      <p class="footer__copy">© <span id="year">2026</span></p>
+      <div class="footer__main">
+        <div class="footer__brand">
+          <a class="footer__logo" href="#top">
+            <img class="footer__logo-img" src="images/logo-wow.png" width="180" height="52" alt="M.A WOW Tmi">
+          </a>
+          <p class="footer__name">Mikael Alshamout</p>
+          <p class="footer__tagline">Remontti- ja rakennuspalvelut · Uusimaa</p>
+        </div>
+        <div class="footer__contacts">
+          <a class="footer__link" href="tel:+358400901260">+358 40 090 1260</a>
+          <a class="footer__link" href="mailto:mmax71074@gmail.com">mmax71074@gmail.com</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© <span id="year">2026</span> M.A WOW Tmi</p>
+      </div>
     </div>
   </footer>
 
